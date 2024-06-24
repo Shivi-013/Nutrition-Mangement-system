@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNOW YOUR DIET-BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #3ce756);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            text-align: center;
+            color: #340101;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        select {
+            background-color: #f4f4f4;
+        }
+
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .captions {
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <H1><u><i>KNOW YOUR DIET PLAN</i></u></H1>
+        <h2>BMI Calculator</h2>
+        <form action ="/calculate" method="post" id="bmiForm">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="age" name "age" placeholder="Age" required>
+            <input type="text" id="height" name="height" placeholder="Height (cm)" required>
+            <input type="text" id="weight" name="weight" placeholder="Weight (kg)" required>
+            <input type="text" id="foodHabits" name="foodHabits" placeholder="Food Habits" required>
+            <select id="goal" name="goal">
+                <option value="">Select Goal</option>
+                <option value="weightLoss">Weight Loss</option>
+                <option value="weightGain">Weight Gain</option>
+            </select>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>

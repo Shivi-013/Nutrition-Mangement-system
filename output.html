@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Gain Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #3ce756);
+            margin: 0;
+            padding: 0;
+            color: hwb(0 2% 95%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        #dietPlan {
+            margin-top: 20px;
+            
+        }
+
+        #dietChart img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        #exerciseVideo iframe {
+            width: 100%;
+            height: 315px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>BMI CALCULATOR</h1>
+        <p>The result is: {{ result }}</p>
+        <p style="color: darkgreen;size: 10cm;">We would suggest you with our WEIGHT GAIN PROGRAM</p><br><br>
+        <h1>Weight Gain Program</h1><br>
+
+        <!-- Diet Plan Section -->
+        <div id="dietPlan">
+            <h2>Diet Plan for Weight Gain</h2>
+            <p style="color: chocolate;">Follow this diet plan to achieve your weight gain goals:</p>
+            <ul>
+                <li>Consume more calories than your body burns.</li><br>
+                <li>Include protein-rich foods such as lean meats, dairy, and legumes.</li><br>
+                <li>Incorporate healthy fats like avocados, nuts, and olive oil.</li><br>
+                <li>Full-fat dairy, including milk, yogurt and cheese</li><br>
+                <li>Whole grains like whole-wheat bread, whole-wheat pasta, brown rice.</li><br>
+                <li>Eat complex carbohydrates such as whole grains and vegetables.</li><br>
+                <li>Stay hydrated and consider adding smoothies or shakes to increase calorie intake.</li>
+                
+            </ul>
+            <br><br><br>
+
+            <!-- Diet Chart Image -->
+            <div id="dietChart">
+                <h3>Diet Chart Example</h3>
+                <img src="https://assets.lybrate.com/q_auto:eco,f_auto,w_1200,c_fill,g_auto/imgs/product/kwds/diet-chart/Weight-Gain-Diet-Chart-v1.jpg" alt="Weight Gain Diet Chart">
+            </div>
+        </div>
+
+        <!-- Weight Gain Exercise Video Section -->
+        <div id="exerciseVideo">
+            <h2>Weight Gain Exercise Video</h2>
+            <p>Combine your diet plan with effective exercises. Watch the video below for weight gain exercises:</p>
+            <!-- Embed a YouTube video for weight gain exercises -->
+            <!-- <video src="https://youtu.be/zlyqr9bNs1E?si=_HgEi5ujMe8tM0A0">exercise video</video> -->
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/your_weight_gain_exercise_video_id" frameborder="0" allowfullscreen></iframe> -->
+            <iframe src="https://youtu.be/zlyqr9bNs1E?si=PhOXa3kmHgA5RRyp" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>

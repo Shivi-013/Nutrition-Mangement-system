@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3498db, #3ce756);
+            margin: 0;
+            padding: 0;
+            color: hwb(0 2% 95%);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        #dietPlan {
+            margin-top: 20px;
+            
+        }
+
+        #dietChart img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        #exerciseVideo iframe {
+            width: 100%;
+            height: 315px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>BMI CALCULATOR</h1>
+        <p>The result is: {{ result }}</p>
+        <p style="color: darkgreen;size: 10cm;">We would suggest you with our WEIGHT LOSS PROGRAM</p><br><br>
+        <h1>Weight Loss  Program</h1><br>
+
+        <!-- Diet Plan Section -->
+        <div id="dietPlan">
+            <h2>Diet Plan for Weight Loss</h2>
+            <p style="color: chocolate;">Follow this diet plan to achieve your weight loss goals:</p>
+            <ul>
+                <li>Calorie Control: Consume fewer calories than your body burns.</li><br>
+                <li>Lean Proteins: Include poultry, fish, tofu, and legumes.</li><br>
+                <li>Healthy Fats: Opt for avocados, nuts, and olive oil in moderation.</li><br>
+                <li>Low-Fat Dairy: Choose options like skim milk, yogurt, and cheese.</li><br>
+                <li>Veggies Priority: Emphasize non-starchy vegetables.</li><br>
+                <li>Hydration: Drink plenty of water and consider herbal teas.</li><br>
+                <li>Whole Grains: Prefer quinoa, barley, and bulgur over refined grains.</li>
+                
+            </ul>
+            <br><br><br>
+
+            <!-- Diet Chart Image -->
+            <div id="dietChart">
+                <h3>Diet Chart Example</h3>
+               <img src="https://assets.lybrate.com/q_auto:eco,f_auto,w_1200,c_fill,g_auto/imgs/product/kwds/diet-chart/Weight-Loss-Diet-Chart-v1.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Weight Gain Exercise Video Section -->
+        <div id="exerciseVideo">
+            <h2>Weight Loss Exercise Video</h2>
+            <p>Combine your diet plan with effective exercises. Watch the video below for weight loss exercises:</p>
+            <!-- Embed a YouTube video for weight gain exercises -->
+            <!-- <video src="https://youtu.be/zlyqr9bNs1E?si=_HgEi5ujMe8tM0A0">exercise video</video> -->
+            <iframe width="560" height="315" src="https://youtu.be/lS6qBCIVFws?si=n2CwiZg6zBuCyvpe" frameborder="0" allowfullscreen></iframe>
+            
+    </div>
+</body>
+</html>
